@@ -16,9 +16,18 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:maxLength="25"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCoroutines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        android:text="Coroutines"/>
 
     <LinearLayout
         android:id="@+id/linearLayoutCoroutines"
@@ -30,10 +39,17 @@
         android:gravity="start"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextName">
+        app:layout_constraintTop_toBottomOf="@+id/textViewCoroutines">
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textViewRx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutCoroutines"
+        android:text="Rx"/>
 
     <LinearLayout
         android:id="@+id/linearLayoutRx"
@@ -45,7 +61,7 @@
         android:gravity="start"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCoroutines">
+        app:layout_constraintTop_toBottomOf="@id/textViewRx">
 
     </LinearLayout>
 
